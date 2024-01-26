@@ -170,6 +170,21 @@ const validateNumericParam = (param, paramName = 'param') => {
   }
 }
 
+/**
+ * @function areaRectangleAlt
+ * @description An alternative method to calculate the area of a rectangle.
+ * @param {Integer} length - Integer
+ * @param {Integer} width - Integer
+ * @return {Integer} - length * width
+ * @example areaRectangleAlt(4, 5) = 20
+ */
+const areaRectangleAlt = (length, width) => {
+  validateNumericParam(length, 'Length')
+  validateNumericParam(width, 'Width')
+  return length * width
+}
+
+
 export {
   surfaceAreaCube,
   surfaceAreaSphere,
@@ -180,5 +195,6 @@ export {
   areaTrapezium,
   areaCircle,
   areaRhombus,
-  areaTriangleWithAllThreeSides
+  areaTriangleWithAllThreeSides,
+  areaRectangleAlt
 }
